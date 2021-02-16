@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* .Map {
+  height: 50vh;
+} */
+
+.leaflet-container {
+  height: 100vh;
+}
