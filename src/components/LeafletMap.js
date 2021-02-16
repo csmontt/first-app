@@ -1,5 +1,6 @@
-import React, {useRef, useEffect} from 'react';
-import { Map, TileLayer, Marker, Popup, MapContainer } from 'react-leaflet';
+import React, {useRef} from 'react';
+//import { Map, TileLayer, Marker, Popup, MapContainer } from 'react-leaflet';
+import { TileLayer, MapContainer } from 'react-leaflet';
 import 'leaflet-fullscreen/dist/Leaflet.fullscreen.js';
 import 'leaflet-fullscreen/dist/leaflet.fullscreen.css';
 
@@ -12,10 +13,10 @@ function LeafletMap () {
   const mapRef = useRef();
   
   // we use a useEffect hook so we can grab the map instance and access the map
-  useEffect(() => {
-    const {current = {} } = mapRef;
-    const {LeafletElement: map} = current;
-  }, []);
+  // useEffect(() => {
+  //   //const {current = {} } = mapRef;
+  //   //const {LeafletElement: map} = current;
+  // }, []);
 
   return (
     <MapContainer ref={mapRef} center={defaultCenter} zoom={defaulZoom} fullscreenControl={true}>

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import 'leaflet/dist/leaflet.css';
 import LeafletMap from './components/LeafletMap';
